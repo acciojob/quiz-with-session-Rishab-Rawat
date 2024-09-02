@@ -40,7 +40,7 @@ function renderQuestions() {
       const choice = question.choices[j];
       const choiceElement = document.createElement("input");
       choiceElement.setAttribute("type", "radio");
-      choiceElement.setAttribute("name",` question-${i}`);
+      choiceElement.setAttribute("name", `question-${i}`);
       choiceElement.setAttribute("value", choice);
       if (userAnswers[i] === choice) {
         choiceElement.setAttribute("checked", true);
